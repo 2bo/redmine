@@ -80,6 +80,12 @@ end
 
 group :development do
   gem "yard"
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem "pry-rails"
+  gem "pry-byebug"
+  # gem "ruby-debug-ide"
+  # gem "debase"
 end
 
 group :test do

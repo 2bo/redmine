@@ -20,4 +20,7 @@ Rails.application.configure do
 
   # Print deprecation notices to stderr and the Rails logger.
   config.active_support.deprecation = [:stderr, :log]
+
+  BetterErrors::Middleware.allow_ip! "0.0.0.0/0"
+
 end

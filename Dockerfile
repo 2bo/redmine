@@ -8,8 +8,8 @@ RUN mkdir /redmine
 WORKDIR /redmine
 COPY Gemfile /redmine/Gemfile
 COPY Gemfile.lock /redmine/Gemfile.lock
-RUN bundle install
 COPY . /redmine
+RUN bundle install
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
